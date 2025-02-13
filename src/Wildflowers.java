@@ -1,4 +1,5 @@
 
-public class Wildflowers {
+public class Wildflowers extends Plants
+{
 
 }

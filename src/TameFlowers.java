@@ -1,4 +1,5 @@
 
-public class TameFlowers {
+public class TameFlowers extends Plants
+{
 
 }
