@@ -2,16 +2,37 @@
 public class Wildflowers extends Plants
 {
 
-
- public void Survive()
+	String habitat;
+	
+	public Wildflowers()
 	{
-		System.out.println("Wilflowers survive in the wilderness with only nature to take care of them.");
+		System.out.println("Wildflowers grow out in nature.");
+		species = "columbine";
+		habitat = "forest";
+	}
+	
+	public void stormyWeather()
+	{
+		System.out.println("Wildflowers adapt to survive stormy weather.");
+		species = "indian paintbrush";
+		habitat = "snowy mountains";
+	}
+	
+	public void getClimate()
+	{
+		System.out.println("This "+species+" is growing in the "+habitat);
 	}
  
- public void plantFlower()
-  {
-	 species = "columbine";
-  }
+    public void beEaten()
+    {
+	    System.out.println("Chomp, chomp, chomp! A chipmunk is chewing on this flower!");
+    }
+    
+    public void test()
+    {
+    	System.out.println(super.beEaten());
+    
+    }
  
  
 }

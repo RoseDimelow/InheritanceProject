@@ -1,24 +1,27 @@
 
 public class Plants
 {
-	String species;
+	protected String species = "random plant";
 	
-	public void introduce (String species)
+	public Plants()
+	{
+		System.out.println("Now entering the first constructor of the superclass!");
+//		species = "random plant";
+	}
+	
+	public void giveIntroduction()
 	{
 		System.out.println("Hi, I'm a little "+species+" growing in your yard!");
 	}
 	
-	public void Caterpillar()
+	public void giveIntroduction(String species)
+	{
+		System.out.println("Hi, I'm a little "+species+" growing in your yard!");
+	}
+	
+	public void beEaten()
 	{
 		System.out.println("Munch, munch, munch! A caterpillar is munching your leaves!");
 	}
-	public void waterPlants()
-	{
-		System.out.println("Yay! Now we can grow!");
-	}
-	
-	public void survive()
-	{ 
-		System.out.println("Different plants survive in different environments");
-	}
+
 }
