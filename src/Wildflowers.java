@@ -1,7 +1,6 @@
 
 public class Wildflowers extends Plants
 {
-
 	String habitat;
 	
 	public Wildflowers()
@@ -11,16 +10,10 @@ public class Wildflowers extends Plants
 		habitat = "forest";
 	}
 	
-	public void stormyWeather()
+	//abstracted method
+	public void getHabitat()
 	{
-		System.out.println("Wildflowers adapt to survive stormy weather.");
-		species = "indian paintbrush";
-		habitat = "snowy mountains";
-	}
-	
-	public void getClimate()
-	{
-		System.out.println("This "+species+" is growing in the "+habitat);
+		System.out.println("This "+species+" is growing in the "+habitat+".");
 	}
  
     public void beEaten()
@@ -28,11 +21,10 @@ public class Wildflowers extends Plants
 	    System.out.println("Chomp, chomp, chomp! A chipmunk is chewing on this flower!");
     }
     
-    public void test()
+    //calls the superclass version of the overridden method
+    public void callSuper()
     {
-    	System.out.println(super.beEaten());
-    
+    	super.beEaten();
     }
- 
  
 }

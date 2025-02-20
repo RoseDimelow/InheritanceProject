@@ -1,13 +1,15 @@
 
-public class Plants
+public abstract class Plants
 {
 	protected String species = "random plant";
 	
 	public Plants()
 	{
-		System.out.println("Now entering the first constructor of the superclass!");
-//		species = "random plant";
+		super();
+		System.out.println("Now entering the first constructor of the superclass!");	
 	}
+	
+	public abstract void getHabitat();
 	
 	public void giveIntroduction()
 	{
